@@ -856,7 +856,7 @@ const Dashboard = ({ sidebarOpen: _ }: DashboardProps) => {
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <button
-                            onClick={() => copyToClipboard(`http://localhost:5173/pay/invoice_checkout?hash=${inv.hash}`)}
+                            onClick={() => copyToClipboard(`https://app-swiftprotocol.vercel.app/pay/invoice_checkout?hash=${inv.hash}`)}
                             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
                             title="Copy share URL"
                           >
