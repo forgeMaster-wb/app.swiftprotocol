@@ -3,10 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { WagmiProvider } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-// Config
 import { config } from './component/utils/wagmi.config';
 
-// Components
+
 import Navbar from './component/navbar';
 import Sidebar from './component/sidebar';
 import Dashboard from './component/dashboard';
@@ -14,7 +13,7 @@ import CreateInvoice from './component/pages/create_invoice';
 import InvoiceCheckout from './component/pages/pay/invoice_checkout';
 import Settings from './component/setting';
 
-// Styles
+
 import './App.css';
 import Transactions from './component/pages/transactions';
 import PaymentAutomation from './component/pages/paymentAutomation';
@@ -38,7 +37,7 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Loading screen
+ 
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-900 flex items-center justify-center">
